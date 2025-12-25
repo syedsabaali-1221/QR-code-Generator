@@ -1,0 +1,118 @@
+:root{
+    --bcg-color:#001122;
+    --primary-color:#155e75;
+    --border-radius: 8px;
+    --secondary-color:white;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+   display: flex;
+    background-color:var(--bcg-color);
+   justify-content: center;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+}
+
+.box{
+    background-color: var(--primary-color);
+   width: 400px;
+   border-radius:var(--border-radius) ;
+   padding: 30px;
+}
+h1{
+   
+     font-size: 26px;
+     text-align: center;
+     color: var(--secondary-color);
+     margin-bottom: 24px;
+     text-transform: uppercase;
+
+}
+
+.qr-header input{
+    width: 100%;
+margin-block: 12px;
+}
+.qr-header input,select{
+    padding: 8px;
+    border-radius: var(--border-radius);
+    font-size: 18px;
+    
+    outline: none;
+    border: 2px  solid black;
+}
+#myDropdown{
+  margin-left: 3rem;
+}
+.qr-header label{
+    color: var(--secondary-color);
+    font-size: 20px;
+    
+}
+
+.qr-header div{
+    display: flex;
+    justify-content: space-between;
+}
+.qr-body{
+    
+    display: grid;
+  place-items: center;
+  padding: 20px;
+  
+
+}
+ /* change their size as user requirement without refreh dynamically.
+ They maintain the qr code ht and wt by screen size not overload it. */
+.qr-body img{
+    max-width: 100%; 
+    max-height: 100%;
+    margin-block: 10px;
+    padding: 20px;
+    border: 0.5px solid var(--secondary-color);
+    border-radius: var(--border-radius);
+
+}
+.qr-footer{
+   
+    
+    display: flex;
+    /* justify-content: space-between; */
+}
+.btn{
+   width: 170px;
+    height: 43px;
+    font-size: 20px;
+    justify-content: center;
+    display: flex;
+    margin: 2px;
+    align-items: center;
+    border-radius: var(--border-radius);
+}
+@media screen and(max-width:520px) {
+    .box{
+        width: 80%;
+    }
+    .btn{
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+
+
+.result-con{
+    display: none;
+}
+ a{
+        color: white;
+        text-decoration: none;
+    }
