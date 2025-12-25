@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR-Reader</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
+  
+  <script src="./"></script>
+  <style>
+    body{
+        background-color: darkgrey;
+        color: white;
+        font-size: 16px;
+
+    }
+   
+   </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <h1>Generate QR Code</h1>
+        <div class="qr-header">
+            <input type="text" placeholder="Generate QR Code" id="qr-text">
+            <label for="myDropdown">Select size: </label>
+            <select name="myDropdown" id="myDropdown">
+                <option value="100">100*100</option>
+                <option value="200">200*200</option>
+                <option value="300">300*300</option>
+                <option value="400">400*400</option>
+                <option value="500">500*500</option>
+                <option value="600">600*600</option>
+                <option value="700">700*700</option>
+            </select>
+        </div>
+        <div class="qr-body">
+
+        </div>
+        <div class="qr-footer">
+            <button class="btn" id="generateBtn">Generate</button>
+            <button class="btn" id="downloadBtn" download="QR_Code_png">Download</button>
+        </div>
+    </div>
+
+
+    <div id="scanner" width="600px" height="600px"></div>
+    <div id="result-container" class="result-con"> </div>
+    <script>
+        
+   </script>
+
+    <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</body>
+
+</html>
